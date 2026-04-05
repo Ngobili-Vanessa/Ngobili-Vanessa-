@@ -1,26 +1,31 @@
-# Ngobili-Vanessa- 💗
+# ✨ Hi, I'm Vanessa 💗
 
-Designer | Frontend Developer  
+🎨 Designer | 💻 Frontend Developer
+Building soft and creative digital experiences.
 
 ---
 
 ## 💕 About Me
-I create soft, clean, and engaging digital experiences through design and code.
+I'm passionate about creating functional designs. I bring ideas to life through designs, codes, and creativity.
 
 ---
 
-## 💻 Tech Stack
-- HTML  
-- CSS  
-- JavaScript  
-- React  
+## 💻 Tech Skills
+- HTML
+- CSS
+- JavaScript
+- React
+
+---
+
+## 🎨 Design Skills
+- Figma
+- Logo Design
+- UI/UX Design
 
 ---
 
 ## 🎨 UI/UX Projects
-
-### ✨ Mobile UI Interaction
-A soft and minimal interface focused on smooth interaction.
 
 🎥 Watch Video: (coming soon)
 
