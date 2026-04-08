@@ -27,7 +27,7 @@ I'm passionate about creating functional designs. I bring ideas to life through 
 
 ## 🎨 UI/UX Projects
 
-🎥 Watch Video: (coming soon)
+🎥 Watch Video: (https://drive.google.com/file/d/16I_iJSJk3yTd5S8mYUUm8s_iqxfYWDGK/view?usp=drivesdk)
 
 ---
 
