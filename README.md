@@ -27,7 +27,7 @@ I'm passionate about creating functional designs. I bring ideas to life through 
 
 ## 🎨 UI/UX Projects
 
-🎥 Watch Video: (https://drive.google.com/file/d/16I_iJSJk3yTd5S8mYUUm8s_iqxfYWDGK/view?usp=drivesdk)
+🎥 Watch video(https://github.com/Ngobili-Vanessa/Ngobili-Vanessa-/blob/da678cdc70a5ced77eb27e0b99184bd2de4e7824/XRecorder_20260408_06.mp4)
 
 ---
 
