@@ -30,6 +30,11 @@ I'm passionate about creating functional designs. I bring ideas to life through 
 🎥 watch video (https://youtube.com/shorts/U7wuTQRTWJk?si=RfipEscLikcRWYXv)
 
 A clean visual design created using Figma.
+
+🎥 watch video 
+(https://youtube.com/shorts/O4aE8jJ_HlU?si=8FKxMdzctnAtwECt)
+
+A clean sign-in and landing page UI designed for simplicity, clarity, and user-friendly experience.
 ---
 
 ## 📬 Contact
