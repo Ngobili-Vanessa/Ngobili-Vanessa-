@@ -27,8 +27,9 @@ I'm passionate about creating functional designs. I bring ideas to life through 
 
 ## 🎨 Projects
 
-🎥 watch video(https://youtube.com/shorts/U7wuTQRTWJk?si=RfipEscLikcRWYXv)
+🎥 watch video (https://youtube.com/shorts/U7wuTQRTWJk?si=RfipEscLikcRWYXv)
 
+A clean visual design created using Figma.
 ---
 
 ## 📬 Contact
