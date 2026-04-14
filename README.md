@@ -35,6 +35,13 @@ A clean visual design created using Figma.
 (https://youtube.com/shorts/O4aE8jJ_HlU?si=8FKxMdzctnAtwECt)
 
 A clean sign-in and landing page UI designed for simplicity, clarity, and user-friendly experience.
+
+🎥 watch video 
+(https://youtu.be/PuDgjZwoo4Q?si=MViaEUA6n60Id0bq)
+
+Restaurant website UI design practice 
+Focused on clean layout, smooth navigation, and user-friendly experience.
+
 ---
 
 ## 📬 Contact
