@@ -1,0 +1,76 @@
+.signin-container{
+       width: 400px;
+  padding: 30px;
+  margin: 50px auto;
+  background-color: rgb(182, 180, 180);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid black;
+  height: 500px;
+}
+.welcome{
+    position: relative;
+bottom: 35px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 40px;
+font-weight: bolder;
+color: black;
+}
+.continue{
+ position: relative;
+bottom: 60px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+color: black;
+}
+input{
+        padding-left:15px ;
+}
+.email2{
+     position: relative;
+    bottom: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 330px;
+    left: 35px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    border: 1px solid rgb(0, 0, 0);
+}
+.password2{
+       position: relative;
+    bottom: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 330px;
+    left: 35px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    border: 1px solid black;
+}
+.signin2{
+      position: relative;
+    bottom: 25px;
+    width: 355px;
+    left: 30px;
+    color: white;
+    background-color: rgb(0, 0, 138);
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    font-size: 18px;
+}
+.back{
+    color: rgb(78, 75, 75) ;
+position: relative;
+bottom: 25px;
+left: 5px;
+}
+.link2{
+     color: rgb(0, 0, 138) ;
+     cursor: pointer;
+     font-weight: bold;
+     text-decoration: underline;
+}
