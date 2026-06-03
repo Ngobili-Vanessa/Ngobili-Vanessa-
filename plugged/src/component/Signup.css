@@ -1,0 +1,135 @@
+.container{
+    width: 400px;
+  padding: 30px;
+  margin: 50px auto;
+  background-color: rgb(182, 180, 180);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid black;
+  min-height: 400px;
+
+}
+.create{
+position: relative;
+top: 25px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+font-weight: bolder;
+color: black;
+}
+input{
+    padding-left:15px ;
+}
+.email{
+    position: relative;
+    top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 330px;
+    left: 35px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    border: 1px solid rgb(0, 0, 0);
+}
+.password{
+     position: relative;
+    top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 330px;
+    left: 35px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    border: 1px solid black;
+}
+.confirm{
+     position: relative;
+    top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 330px;
+    left: 35px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    border: 1px solid black;
+
+}
+.check{
+    position: relative;
+    right: 150px;
+    top: 29px;
+}
+.words{
+    position: relative;
+    bottom: 3px;
+    left: 12px;
+    font-size: 15px;
+    color: rgb(78, 75, 75);
+}
+.signup{
+    position: relative;
+    bottom: 25px;
+    width: 355px;
+    left: 30px;
+    color: white;
+    background-color: rgb(0, 0, 138);
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    font-size: 18px;
+}
+.lines{
+    display: flex;
+    
+}
+.oneline{
+    width: 120px;
+    height: 1px;
+    color: black;
+    background-color: black;
+    position: relative;
+    right: 5px;
+    border: none;
+    /* top:  5px; */
+    bottom: 15px;
+}
+.secondline{
+     width: 120px;
+    height: 1px;
+    color: black;
+    background-color: black;
+    position: relative;
+    left: 10px;
+    border: none;
+    bottom: 15px;
+
+}
+.or{
+     position: relative;
+    left: 5px;
+    font-size: 15px;
+    bottom: 55px;
+     color: rgb(78, 75, 75);
+ 
+}
+.account{
+color: rgb(78, 75, 75) ;
+position: relative;
+bottom: 100px;
+left: 5px;
+}
+.link{
+    color: rgb(0, 0, 138) ;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.logoo{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 145px;
+}
