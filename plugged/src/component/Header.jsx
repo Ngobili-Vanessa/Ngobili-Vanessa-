@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
+import "./Header.css";
 
 function Header() {
   return (
@@ -25,7 +26,7 @@ function Header() {
         </Link>
 
         <Link to="/profile">
-          <FaUser />
+          <FaUser /> 
         </Link>
       </div>
     </header>
