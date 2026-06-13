@@ -1,0 +1,97 @@
+.home-container{
+    background-color:white;
+}
+
+
+.home-banner{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(0, 0, 138) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 1px;
+}
+.banner-text{
+    max-width: 500px;
+}
+.headline{
+    font-size: 3rem;
+    color: white;
+    line-height: 1.2;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+.desc{
+    color: white;
+    position: relative;
+    bottom: 25px;
+    font-size: 18px;
+    left: 10px;
+}
+.shopnow{
+    width: 130px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: relative;
+    right: 45px;
+    color: rgb(0, 0, 138) ;
+}
+.explorenow{
+     width: 130px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: relative;
+    left: 45px;
+    color: rgb(0, 0, 138) ;
+}
+.banner{
+    width: 500px;
+    height: 600px;
+}
+.feat-pro{
+    width: 100%;
+    height: 500px;
+    background: white;
+    position: relative;
+    top: 15px;
+    border: 1px solid black;
+   
+}
+.pro{
+    color: black;
+    position: relative;
+    top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.products{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 50px;
+    top: 6px;
+}
+.earbuds{
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+}
+.speaker{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.bluetooth{
+    position: relative;
+    left: 15px;
+}

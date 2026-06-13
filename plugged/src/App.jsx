@@ -10,13 +10,12 @@ import Cart from "./component/Cart";
 import Profile from "./component/Profile";
 import MainLayout from "./component/MainLayout";
 import AuthLayout from "./component/AuthLayout";
+import "./component/Home.css";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-
-       
         <Route element={<AuthLayout />}>
           <Route path="/" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
