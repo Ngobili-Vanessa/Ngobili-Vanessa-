@@ -51,47 +51,161 @@
 }
 .banner{
     width: 500px;
-    height: 600px;
+    height: 800px;
+    position: relative;
+    bottom: 35px;
+    right: 60px;
 }
 .feat-pro{
-    width: 100%;
-    height: 500px;
-    background: white;
-    position: relative;
-    top: 15px;
-    border: 1px solid black;
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
    
 }
 .pro{
-    color: black;
-    position: relative;
-    top: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 35px;
+margin-bottom: 15px; 
+font-weight: bold; 
 }
 .products{
+ display: flex;
+ gap: 20px;
+ overflow-x:auto ;
+ scroll-behavior: smooth;
+ padding: 10px;
+ flex-wrap: nowrap;
+}
+.products::-webkit-scrollbar{
+    display: none;
+}
+.wireless-earbud-section,
+.bluetooth-speaker-section,
+.laptop-section,
+.phone-section,
+.smartwatch-section,
+.fridge-section,
+.console-section,
+.headphone-section{
+    min-width: 250px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 10px;
+  overflow: hidden;
+    text-align: center;
+     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.wireless-earbud-section:hover,
+.bluetooth-speaker-section:hover,
+.laptop-section:hover,
+.phone-section:hover,
+.smartwatch-section:hover,
+.fridge-section:hover,
+.console-section:hover,
+.headphone-section:hover{
+    transform: scale(1.03);
+}
+.earbuds,
+.speaker,
+.laptop,
+.phone,
+.watch,
+.frizzer,
+.game,
+.head{
     width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    left: 50px;
-    top: 6px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
 }
-.earbuds{
-    width: 350px;
-    height: 350px;
-    border-radius: 15px;
+
+.wireless,
+.bluetooth,
+.lapp,
+.telephone,
+.smartt,
+.fridger,
+.console,
+.headphone{
+    font-size: 25px;
+    margin: 10px 0;
 }
-.speaker{
-    width: 350px;
-    height: 350px;
-    position: relative;
-    left: 25px;
-    border-radius: 15px;
-    border: 1px solid black;
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-.bluetooth{
+.arrow.left{
+    left: 10px;
+}
+.arrow.right{
+    right: 10px;
+}
+
+.promo{
+background-image: url(/images-featured/file_00000000bacc71fba3a1d0babcf992ba.png);
+background-size: cover;
+background-position: center;
+position: relative;
+height: 300px;
+overflow: hidden;
+border-radius: 12px;
+}
+.promo-talks{
+position: relative;
+top: 60px;
+right: 320px;
+}
+.flash{
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+}
+.save{
+    color: white;
+    font-size: 20px;
+}
+.shopnow-promo{
+    color: rgb(0, 0, 138);
+    width: 200px;
+    height: 60px;
     position: relative;
-    left: 15px;
+    top: 20px;
+    border: none;
+    border-radius: 20px;
+}
+.product-card{
+    min-width: 220px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.product-card:hover{
+    transform: scale(1.03);
+}
+.product-img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.product-title{
+    font-size: 25px;
+    margin: 10px 0;
+    color: black;
+}
+.sellers{
+    padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+top:30px;
 }
