@@ -15,23 +15,26 @@ import "./component/Contact.css";
 import "./component/Cart.css";
 import "./component/Search.css";
 
+
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<AuthLayout />}>
-          <Route path="/" element={<Signup />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
         </Route>
 
-        <Route element={<MainLayout />}>
-          <Route path="/home" element={<Home />} />
-          <Route path="/category" element={<Category />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/Cart" element={<Cart />} />
-          <Route path="/Profile" element={<Profile />} />
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Category />} />
+          <Route path="home" element={<Home />} />
+          <Route path="category" element={<Category />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="search" element={<Search />} />
+          <Route path="Cart" element={<Cart />} />
+          <Route path="Profile" element={<Profile />} />
         </Route>
 
       </Routes>
