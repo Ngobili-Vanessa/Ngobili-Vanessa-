@@ -11,6 +11,9 @@ import Profile from "./component/Profile";
 import MainLayout from "./component/MainLayout";
 import AuthLayout from "./component/AuthLayout";
 import "./component/Home.css";
+import "./component/Contact.css";
+import "./component/Cart.css";
+import "./component/Search.css";
 
 function App() {
   return (

@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
   const products = [
     {
@@ -124,14 +125,16 @@ function Home() {
       behavior: "smooth",
     });
   };
+  const navigate = useNavigate();
+
   return (
     <div className="home-container">
       <div className="home-banner">
         <div className="banner-text">
           <h1 className="headline">POWERING YOUR DIGITAL LIFESTYLE</h1>
           <p className="desc">Shop latest gadgets, accessories and tech essentials</p>
-          <button className="shopnow">Shop now</button>
-          <button className="explorenow">Explore now</button>
+          <button className="shopnow" onClick={() => navigate("/category")}>Shop now</button>
+          <button className="explorenow" onClick={() => document.getElementById("pro")?.scrollIntoView({behavior:"smooth"})}>Explore now</button>
         </div>
         <img src="/images-featured/1000041314-removebg-preview.png" alt="banner" className="banner" />
       </div>
@@ -160,7 +163,7 @@ function Home() {
          </div>
 
          <div className="sellers">
-          <h2 className="pro">Best Sellers</h2>
+          <h2 id="pro">Best Sellers</h2>
            <button className="arrow left" onClick={scrollBestLeft}> <FaChevronLeft/> </button>
           <div className="products" ref={bestSellerRef}>
               {bestSellers.map((item, index) => (
