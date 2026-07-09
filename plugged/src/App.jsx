@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./component/Signup";
 import Signin from "./component/Signin";
 import Home from "./component/Home";
-import Category from "./component/Category";
 import About from "./component/About";
 import Contact from "./component/Contact";
+import Category from "./component/Category";
 import Search from "./component/Search";
 import Cart from "./component/Cart";
 import Profile from "./component/Profile";
@@ -27,7 +27,7 @@ function App() {
         </Route>
 
         <Route path="/" element={<MainLayout />}>
-          <Route index element={<Category />} />
+
           <Route path="home" element={<Home />} />
           <Route path="category" element={<Category />} />
           <Route path="about" element={<About />} />

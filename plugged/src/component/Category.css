@@ -1,0 +1,106 @@
+.category-page {
+    padding: 2rem 1.5rem 4rem;
+    background: #f7f7fb;
+}
+
+.category-hero {
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    padding: 2rem;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #091629, #1d4ed8);
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-hero h1 {
+    font-size: 2rem;
+    margin: 0.25rem 0 0.75rem;
+}
+
+.category-hero p {
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.category-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    background: #fff;
+    color: #091629;
+    font-weight: 700;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+.category-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.category-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.category-card-body {
+    padding: 1rem 1rem 1.2rem;
+}
+
+.category-badge {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.category-card h3 {
+    margin: 0 0 0.35rem;
+    color: #111827;
+}
+
+.category-card p {
+    margin: 0 0 0.9rem;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+.category-card a {
+    color: #1d4ed8;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .category-hero {
+        padding: 1.4rem;
+    }
+
+    .category-hero h1 {
+        font-size: 1.5rem;
+    }
+}
