@@ -17,12 +17,13 @@
     max-width: 500px;
 }
 .headline{
-    font-size: 3rem;
+    font-size: 48px;
     color: white;
-    line-height: 1.2;
+    line-height: 1.1;
     position: relative;
     bottom: 20px;
     left: 10px;
+    font-weight: 700px;
 }
 .desc{
     color: white;
@@ -32,22 +33,34 @@
     left: 10px;
 }
 .shopnow{
-    width: 130px;
-    height: 40px;
-    border: 1px solid white;
-    border-radius: 20px;
-    position: relative;
-    right: 45px;
-    color: rgb(0, 0, 138) ;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 25px;
+  background: white;
+  color: rgb(0, 0, 138);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.shopnow:hover{
+  opacity: 0.85;
 }
 .explorenow{
-     width: 130px;
-    height: 40px;
-    border: 1px solid white;
-    border-radius: 20px;
-    position: relative;
-    left: 45px;
-    color: rgb(0, 0, 138) ;
+    border: none;
+  padding: 14px 28px;
+  border-radius: 25px;
+  background: white;
+  color: rgb(0, 0, 138);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  left: 30px;
+}
+.explorenow:hover{
+  opacity: 0.85;
 }
 .banner{
     width: 500px;
