@@ -1,9 +1,9 @@
 ﻿import "./Profile.css";
 
 const user = {
-  name: "Alex Morgan",
-  email: "alex.morgan@example.com",
-  phone: "+234 812 345 6789",
+  name: "Omeh samuel victory",
+  email: "samuel.omeh@example.com",
+  phone: "+234 812 #######",
   memberSince: "June 2024",
   address: "24 Tech Avenue, Lagos, Nigeria",
   avatar: "https://i.pravatar.cc/150?img=56",
