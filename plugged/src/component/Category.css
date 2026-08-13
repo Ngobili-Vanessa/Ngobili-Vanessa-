@@ -183,6 +183,8 @@
   align-items: center;
   gap: 6px;
   margin-bottom: 8px;
+  position: relative;
+  left: 45px;
 }
 
 .product-rating span {
