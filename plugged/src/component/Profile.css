@@ -1,0 +1,204 @@
+.profile-page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    color: #111;
+}
+
+.profile-hero {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-card,
+.profile-summary {
+    background: #fff;
+    border: 1px solid #e6e8ed;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    padding: 1.75rem;
+}
+
+.profile-card {
+    min-height: 320px;
+}
+
+.profile-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0f172a;
+    margin-bottom: 1rem;
+}
+
+.profile-card h2,
+.profile-card h3,
+.section-header h2 {
+    margin: 0;
+    color: #0f172a;
+}
+
+.profile-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.profile-card h3 {
+    margin-top: 1.25rem;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+.profile-detail {
+    margin: 0.8rem 0;
+    display: grid;
+    gap: 0.35rem;
+}
+
+.profile-detail strong {
+    display: block;
+    color: #0f172a;
+    font-size: 0.95rem;
+}
+
+.profile-detail span {
+    color: #475569;
+    font-size: 0.92rem;
+}
+
+.profile-actions {
+    display: grid;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.profile-actions a,
+.profile-actions button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 999px;
+    font-weight: 700;
+    padding: 0.95rem 1.2rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-actions a {
+    color: #0f172a;
+    background: #f8fafc;
+}
+
+.profile-actions button {
+    color: #fff;
+    background: #0f172a;
+}
+
+.profile-widgets {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.section-header h2 {
+    font-size: 1.5rem;
+}
+
+.section-header a {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.profile-widget {
+    background: #fff;
+    border: 1px solid #e6e8ed;
+    border-radius: 24px;
+    padding: 1.5rem;
+}
+
+.profile-widget h3 {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    color: #0f172a;
+}
+
+.profile-widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.profile-widget li {
+    display: grid;
+    gap: 0.35rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.profile-widget li:last-child {
+    border-bottom: none;
+}
+
+.profile-widget .item-title {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.profile-widget .item-meta {
+    color: #475569;
+    font-size: 0.92rem;
+}
+
+.profile-widget .item-price {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.profile-summary p {
+    color: #475569;
+    line-height: 1.75;
+}
+
+.profile-summary .summary-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.summary-card {
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.summary-card strong {
+    display: block;
+    color: #0f172a;
+    font-size: 1.35rem;
+}
+
+.summary-card span {
+    color: #475569;
+}
+
+@media screen and (max-width: 900px) {
+
+    .profile-hero,
+    .profile-widgets {
+        grid-template-columns: 1fr;
+    }
+}
