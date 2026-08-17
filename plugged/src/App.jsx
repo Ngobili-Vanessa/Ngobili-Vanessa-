@@ -17,7 +17,7 @@ import "./component/Home.css";
 import "./component/Contact.css";
 import "./component/Cart.css";
 import "./component/Search.css";
-
+import "./component/About.css";
 
 function App() {
   return (
