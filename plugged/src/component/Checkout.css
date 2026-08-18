@@ -30,7 +30,7 @@
 }
 
 
-/* FORM */
+
 
 .checkout-form {
     padding: 30px;
@@ -95,7 +95,6 @@
 }
 
 
-/* PAYMENT */
 
 .payment-title {
     margin-top: 35px !important;
@@ -134,7 +133,7 @@
 }
 
 
-/* SUMMARY */
+
 
 .checkout-summary {
     padding: 28px;
@@ -283,7 +282,7 @@
 }
 
 
-/* RESPONSIVE */
+
 
 @media (max-width: 900px) {
     .checkout-content {
@@ -375,9 +374,7 @@
     font-size: 13px;
     line-height: 1.4;
 }
-/* ================================
-   ONLINE PAYMENT
-================================ */
+
 
 .online-payment {
     margin-top: 20px;
@@ -458,7 +455,7 @@
 }
 
 
-/* CARD DETAILS */
+
 
 .payment-details {
     margin-top: 18px;
@@ -469,7 +466,7 @@
 }
 
 
-/* BANK TRANSFER */
+
 
 .transfer-info {
     margin-top: 18px;

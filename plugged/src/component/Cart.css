@@ -57,9 +57,6 @@
 .shop-btn:active{
     transform: scale(0.98);
 }
-/* ================================
-   CART ITEMS
-================================ */
 
 .cart-items {
     width: 100%;
@@ -90,9 +87,6 @@
     border-bottom: none;
 }
 
-
-/* Product image */
-
 .cart-item-image {
     width: 130px;
     height: 130px;
@@ -106,7 +100,6 @@
 }
 
 
-/* Product information */
 
 .cart-item-info {
     flex: 1;
@@ -131,7 +124,7 @@
 }
 
 
-/* Quantity */
+
 
 .quantity-controls {
     width: fit-content;
@@ -178,7 +171,7 @@
 }
 
 
-/* Remove */
+
 
 .remove-cart-item {
     width: 40px;
@@ -207,9 +200,7 @@
 }
 
 
-/* ================================
-   MOBILE
-================================ */
+
 
 @media (max-width: 700px) {
 
@@ -299,9 +290,7 @@
 }
 
 
-/* ================================
-   ORDER SUMMARY
-================================ */
+
 
 .order-summary {
     padding: 28px;
@@ -393,9 +382,6 @@
 }
 
 
-/* ================================
-   CART RESPONSIVE
-================================ */
 
 @media (max-width: 900px) {
     .cart-content {

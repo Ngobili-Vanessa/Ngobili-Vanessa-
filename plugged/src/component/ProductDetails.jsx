@@ -52,11 +52,11 @@ function ProductDetails() {
       </Link>
 
 
-      {/* MAIN PRODUCT SECTION */}
+     
 
       <div className="product-details">
 
-        {/* PRODUCT IMAGE */}
+      
 
         <div className="product-details-image-container">
 
@@ -69,7 +69,7 @@ function ProductDetails() {
         </div>
 
 
-        {/* PRODUCT INFORMATION */}
+     
 
         <div className="product-details-info">
 
@@ -89,7 +89,7 @@ function ProductDetails() {
           <div className="product-divider"></div>
 
 
-          {/* AVAILABILITY */}
+         
 
           <div className="product-availability">
 
@@ -102,7 +102,7 @@ function ProductDetails() {
           </div>
 
 
-          {/* QUANTITY */}
+       
 
           <div className="product-quantity">
 
@@ -133,7 +133,7 @@ function ProductDetails() {
           </div>
 
 
-          {/* ACTIONS */}
+         
 
           <div className="product-actions">
 
@@ -161,7 +161,7 @@ function ProductDetails() {
       </div>
 
 
-      {/* PRODUCT SPECIFICATIONS */}
+    
 
       <div className="product-specifications">
 
