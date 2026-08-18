@@ -9,6 +9,9 @@ import Category from "./component/Category";
 import Search from "./component/Search";
 import Cart from "./component/Cart";
 import Profile from "./component/Profile";
+import Checkout from "./component/Checkout.jsx";
+import OrderSuccess from "./component/OrderSuccess.jsx";
+import ProductDetails from "./component/ProductDetails.jsx";
 
 import MainLayout from "./component/MainLayout";
 import AuthLayout from "./component/AuthLayout";
@@ -38,6 +41,15 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route
+  path="/product/:productName"
+  element={<ProductDetails />}
+/>
+          <Route
+  path="/order-success"
+  element={<OrderSuccess />}
+/>
         </Route>
 
         

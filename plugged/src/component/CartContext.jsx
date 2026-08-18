@@ -4,6 +4,7 @@ const CartContext = createContext();
 
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
+  const [cartMessage, setCartMessage] = useState("");
 
   const addToCart = (product) => {
     setCartItems((currentItems) => {
@@ -27,6 +28,12 @@ export function CartProvider({ children }) {
         },
       ];
     });
+
+    setCartMessage(`${product.name} added to cart`);
+
+    setTimeout(() => {
+      setCartMessage("");
+    }, 3000);
   };
 
   const removeFromCart = (productName) => {
@@ -67,6 +74,7 @@ export function CartProvider({ children }) {
       value={{
         cartItems,
         cartCount,
+        cartMessage,
         addToCart,
         removeFromCart,
         increaseQuantity,

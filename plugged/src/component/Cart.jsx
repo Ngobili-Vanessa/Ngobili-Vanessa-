@@ -9,6 +9,17 @@ function Cart() {
     increaseQuantity,
     decreaseQuantity,
   } = useCart();
+  console.log("CART ITEMS:", cartItems);
+
+  const subtotal = cartItems.reduce((total, item) => {
+  const price = Number(
+    item.price.replace(/₦|,/g, "")
+  );
+
+  return total + price * item.quantity;
+}, 0);
+
+const formattedSubtotal = `₦${subtotal.toLocaleString()}`;
 
   return (
     <div className="cart-container">
@@ -21,6 +32,7 @@ function Cart() {
           </div>
 
           <h2>Your Cart is Empty</h2>
+
           <p>It doesn't have to be</p>
 
           <Link to="/category">
@@ -30,45 +42,83 @@ function Cart() {
           </Link>
         </div>
       ) : (
-        <div className="cart-items">
-          {cartItems.map((item) => (
-            <div className="cart-item" key={item.name}>
-              <img
-                src={item.image}
-                alt={item.name}
-                className="cart-item-image"
-              />
+      <div className="cart-content">
 
-              <div className="cart-item-info">
-                <h3>{item.name}</h3>
-                <p>{item.price}</p>
+  <div className="cart-items">
+    {cartItems.map((item) => (
+      <div className="cart-item" key={item.name}>
 
-                <div className="quantity-controls">
-                  <button
-                    onClick={() => decreaseQuantity(item.name)}
-                  >
-                    -
-                  </button>
+        <img
+          src={item.image}
+          alt={item.name}
+          className="cart-item-image"
+        />
 
-                  <span>{item.quantity}</span>
+        <div className="cart-item-info">
+          <h3>{item.name}</h3>
 
-                  <button
-                    onClick={() => increaseQuantity(item.name)}
-                  >
-                    +
-                  </button>
-                </div>
-              </div>
+          <p>{item.price}</p>
 
-              <button
-                className="remove-cart-item"
-                onClick={() => removeFromCart(item.name)}
-              >
-                <FiTrash2 />
-              </button>
-            </div>
-          ))}
+          <div className="quantity-controls">
+            <button
+              onClick={() => decreaseQuantity(item.name)}
+            >
+              -
+            </button>
+
+            <span>{item.quantity}</span>
+
+            <button
+              onClick={() => increaseQuantity(item.name)}
+            >
+              +
+            </button>
+          </div>
         </div>
+
+        <button
+          className="remove-cart-item"
+          onClick={() => removeFromCart(item.name)}
+        >
+          <FiTrash2 />
+        </button>
+
+      </div>
+    ))}
+  </div>
+
+
+  <div className="order-summary">
+
+    <h2>Order Summary</h2>
+
+    <div className="summary-row">
+      <span>Subtotal</span>
+      <span>{formattedSubtotal}</span>
+    </div>
+
+    <div className="summary-row">
+      <span>Delivery</span>
+      <span>Free</span>
+    </div>
+
+    <div className="summary-divider"></div>
+
+    <div className="summary-total">
+      <span>Total</span>
+      <span>{formattedSubtotal}</span>
+    </div>
+
+   <Link
+  to="/checkout"
+  className="checkout-btn"
+>
+  Proceed to Checkout
+</Link>
+
+  </div>
+
+</div>
       )}
     </div>
   );

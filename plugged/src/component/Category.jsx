@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Category.css";
 import { useCart } from "../component/CartContext.jsx";
-
 const categories = [
   "All Products",
   "Smartphones",
@@ -60,6 +60,12 @@ const products = [
     price: "₦1,500,000",
     rating: 5,
     reviews: 34,
+     processor: "Apple M2",
+  ram: "8GB",
+  storage: "256GB SSD",
+  display: "13.6-inch Liquid Retina",
+  graphics: "Integrated Apple GPU",
+  os: "macOS"
   },
   {
     name: "Dell XPS 13",
@@ -449,38 +455,24 @@ const products = [
   },
 ];
 
-const Category = () => {
+function Category() {
   const [selectedCategory, setSelectedCategory] = useState("All Products");
+
+  const {
+    addToCart,
+    cartMessage,
+    closeCartMessage,
+  } = useCart();
 
   const filteredProducts =
     selectedCategory === "All Products"
       ? products
       : products.filter(
-        (product) => product.category === selectedCategory
-      );
-
-  const { addToCart } = useCart();
+          (product) => product.category === selectedCategory
+        );
 
   return (
     <div className="category-page">
-
-      <section className="category-banner">
-        <div className="category-banner-content">
-          <h1>Explore Our Collection</h1>
-          <p>Everything tech, all in one place.</p>
-
-          <button className="shop-now-btn">
-            Shop Now
-          </button>
-        </div>
-
-        <div className="category-banner-image">
-          <img
-            src="/images-featured/category-banner.png"
-            alt="Collection of electronic products"
-          />
-        </div>
-      </section>
 
       <section className="category-products-section">
 
@@ -505,46 +497,114 @@ const Category = () => {
         </aside>
 
         <div className="products-section">
+
           <div className="products-header">
             <h2>{selectedCategory}</h2>
-            <span>{filteredProducts.length} Products</span>
+
+            <span>
+              {filteredProducts.length} Products
+            </span>
           </div>
 
           <div className="products-grid">
-            {filteredProducts.map((product) => (
-              <div className="product-card" key={product.name}>
-                <div className="product-image">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                  />
-                </div>
 
-                <div className="product-info">
-                  <h3>{product.name}</h3>
+  {filteredProducts.map((product) => (
+    <div
+      className="product-card"
+      key={product.name}
+    >
 
-                  <div className="product-rating">
-                    <span>★★★★★</span>
-                    <small>({product.reviews})</small>
-                  </div>
+      <Link
+        to={`/product/${encodeURIComponent(product.name)}`}
+        state={{ product }}
+        className="product-card-link"
+      >
 
-                  <p className="product-price">{product.price}</p>
+        <div className="product-image">
+          <img
+            src={product.image}
+            alt={product.name}
+          />
+        </div>
 
-                  <button
-                    className="add-to-cart-btn"
-                    onClick={() => addToCart(product)}
-                  >
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
-            ))}
+        <div className="product-info">
+
+          <h3>{product.name}</h3>
+
+          <div className="product-rating">
+            <span>★★★★★</span>
+
+            <small>
+              ({product.reviews})
+            </small>
           </div>
+
+          <p className="product-price">
+            {product.price}
+          </p>
+
+        </div>
+
+      </Link>
+
+      <button
+        className="add-to-cart-btn"
+        onClick={() => addToCart(product)}
+      >
+        Add to Cart
+      </button>
+
+    </div>
+  ))}
+
+</div>
+
         </div>
 
       </section>
+
+      {cartMessage && (
+        <div className="cart-modal-overlay">
+
+          <div className="cart-modal">
+
+            <div className="cart-success-icon">
+              ✓
+            </div>
+
+            <h2>
+              Added to Cart
+            </h2>
+
+            <p>
+              {cartMessage}
+            </p>
+
+            <div className="cart-modal-actions">
+
+              <button
+                className="continue-shopping-btn"
+                onClick={closeCartMessage}
+              >
+                Continue Shopping
+              </button>
+
+              <Link
+                to="/cart"
+                className="view-cart-btn"
+              >
+                View Cart
+              </Link>
+
+            </div>
+
+          </div>
+
+        </div>
+      )}
+
     </div>
   );
-};
+}
 
 export default Category;
