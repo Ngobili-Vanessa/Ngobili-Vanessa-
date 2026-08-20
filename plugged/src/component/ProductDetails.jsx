@@ -162,60 +162,48 @@ function ProductDetails() {
 
 
     
+<div className="product-specifications">
 
-      <div className="product-specifications">
+  <h2>
+    Product Specifications
+  </h2>
 
-        <h2>
-          Product Specifications
-        </h2>
+  <div className="specifications-list">
 
-        <div className="specifications-list">
+    {Object.entries(product)
+      .filter(
+        ([key]) =>
+          ![
+            "name",
+            "category",
+            "image",
+            "price",
+            "rating",
+            "reviews",
+          ].includes(key)
+      )
+      .map(([key, value]) => (
+        <div
+          className="specification-row"
+          key={key}
+        >
+          <span>
+            {key
+              .replace(/([A-Z])/g, " $1")
+              .replace(/^./, (letter) =>
+                letter.toUpperCase()
+              )}
+          </span>
 
-          {product.processor && (
-            <div className="specification-row">
-              <span>Processor</span>
-              <strong>{product.processor}</strong>
-            </div>
-          )}
-
-          {product.ram && (
-            <div className="specification-row">
-              <span>RAM</span>
-              <strong>{product.ram}</strong>
-            </div>
-          )}
-
-          {product.storage && (
-            <div className="specification-row">
-              <span>Storage</span>
-              <strong>{product.storage}</strong>
-            </div>
-          )}
-
-          {product.display && (
-            <div className="specification-row">
-              <span>Display</span>
-              <strong>{product.display}</strong>
-            </div>
-          )}
-
-          {product.graphics && (
-            <div className="specification-row">
-              <span>Graphics</span>
-              <strong>{product.graphics}</strong>
-            </div>
-          )}
-
-          {product.os && (
-            <div className="specification-row">
-              <span>Operating System</span>
-              <strong>{product.os}</strong>
-            </div>
-          )}
-
+          <strong>
+            {value}
+          </strong>
         </div>
+      ))}
 
-      </div>
+  </div>
+
+</div>
 
     </div>
   );
