@@ -408,7 +408,10 @@ const products = [
     price: "₦1,200,000",
     rating: 5,
     reviews: 90,
-    
+    Power: "Depends on the model and cooling capacity. LG Dual Inverter ACs commonly range from approximately 1HP to 2HP+.",
+    Capacity: "Cooling capacity varies according to the BTU/HP rating. Common residential models range from approximately 9,000 to 24,000 BTU.",
+    Dimensions: "Varies depending on the indoor/outdoor unit and model.",
+    Rating: "Designed for high energy efficiency through LG’s Dual Inverter Compressor technology. Exact energy rating depends on the model and country.",
   },
   {
     name: "Philips Air Purifier",
@@ -417,6 +420,10 @@ const products = [
     price: "₦900,000",
     rating: 5,
     reviews: 80,
+    Power: "Depends on the model; Philips home air purifiers generally use relatively low electrical power.",
+    Capacity: "Rather than a physical capacity, air purifiers are normally rated by CADR (Clean Air Delivery Rate). Depending on the model, CADR can range from around 200 m³/h to over 500 m³/h. ",
+    Dimensions: "Varies by model.",
+    Rating: "Generally designed for low energy consumption, particularly when operating in automatic/sleep modes.",
   },
   {
     name: "Xiaomi Robot Vacuum",
@@ -425,6 +432,10 @@ const products = [
     price: "₦950,000",
     rating: 5,
     reviews: 70,
+    Power: "Varies significantly by model; higher-end Xiaomi robot vacuums can provide very high suction power.",
+    Capacity: "Depends on the model. Some include separate dust and water tanks, while premium models may have an automatic-emptying/cleaning station.",
+    Dimensions: "Varies according to the robot and charging/cleaning station.",
+    Rating: "Xiaomi does not generally use a simple household-style energy rating across its robot vacuum range.",
   },
 
   {
@@ -434,6 +445,10 @@ const products = [
     price: "₦4,900,000",
     rating: 5,
     reviews: 96,
+    Power: "Varies significantly by model; higher-end Xiaomi robot vacuums can provide very high suction power.",
+    Capacity: "Depends on the model. Some include separate dust and water tanks, while premium models may have an automatic-emptying/cleaning station.",
+     Dimensions: "Varies according to the robot and charging/cleaning station.",
+    Rating: "Xiaomi does not generally use a simple household-style energy rating across its robot vacuum range.",
   },
   {
     name: "LG OLED evo TV",
@@ -442,6 +457,10 @@ const products = [
     price: "₦4,200,000",
     rating: 5,
     reviews: 85,
+    Display: "OLED evo, with individually self-lit pixels for deep blacks and high contrast.",
+    Resolution: "4K Ultra HD — 3,840 × 2,160 pixels.",
+    Size: "Depending on the model, LG OLED evo TVs are available from around 42” up to 97”.",
+    Connectivity: "Wi-Fi, Bluetooth 5.3, Ethernet, 4 HDMI inputs, USB and eARC.",
   },
   {
     name: "Sony BRAVIA 9",
@@ -450,6 +469,10 @@ const products = [
     price: "₦3,000,000",
     rating: 5,
     reviews: 74,
+    Display: "Premium Mini LED display with Sony’s XR Backlight Master Drive technology.",
+    Resolution: "4K Ultra HD — 3,840 × 2,160 pixels.",
+    Size: "Sony lists the BRAVIA 9 in 75-inch and 85-inch versions for the Nigerian market.",
+    Connectivity: "Wi-Fi, Bluetooth, HDMI including HDMI 2.1, USB and Ethernet.",
   },
   {
     name: "Amazon Fire TV Stick 4K Max",
@@ -458,6 +481,10 @@ const products = [
     price: "₦100,000",
     rating: 5,
     reviews: 69,
+    Display: "No built-in display; outputs video to a compatible TV.",
+    Resolution: "Supports up to 4K Ultra HD at 60fps.",
+    Size: "No screen — works with compatible TVs of different sizes.",
+    Connectivity: "Wi-Fi 6E, Bluetooth 5.2, HDMI 2.1 and USB-C power. Ethernet can be added with an external adapter.",
   },
 
   {
@@ -467,6 +494,11 @@ const products = [
     price: "₦2,100,000",
     rating: 5,
     reviews: 58,
+    Resolution: "24.2 megapixels.",
+    Sensor: "APS-C CMOS sensor measuring approximately 22.3 × 14.9mm.",
+    Lens: "Canon RF/RF-S mount, with EF/EF-S lenses supported using an EF-EOS R adapter.",
+    Video: "4K at 30fps, oversampled from 6K, and 4K at 60fps with a crop; Full HD up to 120fps.",
+    Battery: "Approximately 430 shots using the LCD or 260 shots using the viewfinder under CIPA testing.",
   },
   {
     name: "Sony Alpha a7 IV",
@@ -475,6 +507,11 @@ const products = [
     price: "₦3,200,000",
     rating: 5,
     reviews: 47,
+    Resolution: "33 megapixels effective.",
+    Sensor: "35mm full-frame Exmor R CMOS, 35.9 × 23.9mm.",
+    Lens: "Sony E-mount, supporting interchangeable Sony and compatible E-mount lenses.",
+    Video: "Up to 4K 60p, with 10-bit 4:2:2 recording and XAVC formats.",
+    Battery: "Approximately 580 shots using the LCD or 520 shots using the electronic viewfinder.",
   },
   {
     name: "Nikon Z6 III",
@@ -483,6 +520,11 @@ const products = [
     price: "₦2,900,000",
     rating: 5,
     reviews: 63,
+    Resolution: "24.5 megapixels.",
+    Sensor: "Full-frame FX-format partially stacked CMOS, measuring 35.9 × 23.9mm.",
+    Lens: "Nikon Z mount, supporting interchangeable Z-mount lenses.",
+    Video: "Up to 6K/60p internal RAW, 5.4K/60p and 4K/120p, making it one of the strongest video options here.",
+    Battery: "Approximately 410 shots using the monitor or 380 shots using the viewfinder. Video recording is approximately 100 minutes per charge under Nikon’s stated conditions.",
   },
   {
     name: "Fujifilm X-T5",
@@ -491,6 +533,12 @@ const products = [
     price: "₦3,000,000",
     rating: 5,
     reviews: 52,
+    Resolution: "40.2 megapixels.",
+    Sensor: "APS-C X-Trans CMOS 5 HR, measuring 23.5 × 15.7mm.",
+    Lens: "Fujifilm X-mount, with a wide range of interchangeable XF/XC lenses.",
+    Video: "6.2K at 30p, 4K up to 60p and Full HD up to 240p.",
+    Battery: "Approximately 580 shots in Normal mode or 740 shots in Economy mode.",
+
   },
 
   {
@@ -500,6 +548,10 @@ const products = [
     price: "₦298,000",
     rating: 5,
     reviews: 41,
+    Standard: "Wi-Fi 6 (802.11ax).",
+    Speed: "Up to 5,400 Mbps — 4,804 Mbps on 5GHz and 574 Mbps on 2.4GHz. ",
+    Ports: "1× Gigabit WAN, 4× Gigabit LAN and 1× USB 3.0.",
+    Range: "Designed to cover approximately a 3-bedroom house, using six high-performance antennas, beamforming and a high-power FEM.",
   },
   {
     name: "ASUS RT-AX88U Pro",
@@ -508,6 +560,10 @@ const products = [
     price: "₦500,000",
     rating: 5,
     reviews: 30,
+    Standard: "Wi-Fi 6 (802.11ax).",
+    Speed: "AX6000, with up to 4,804 Mbps on 5GHz + 1,148 Mbps on 2.4GHz.",
+    Ports: "1× 2.5Gbps WAN, 1× 2.5Gbps LAN, 4× Gigabit LAN and 1× USB 3.2 Gen 1.",
+    Range: "Designed for high-performance coverage in larger homes; actual range depends on building layout and interference.",
   },
   {
     name: "NETGEAR Nighthawk AX5400",
@@ -516,6 +572,10 @@ const products = [
     price: "₦385,000",
     rating: 5,
     reviews: 20,
+    Standard: "Wi-Fi 6 (802.11ax) dual-band.",
+    Speed: "Up to 5.4Gbps (AX5400).",
+    Ports: "5 Gigabit Ethernet ports — 1 WAN + 4 LAN — plus 1× USB 3.0.",
+    Range: "Uses four high-performance antennas and Beamforming+ to improve coverage and reliability.",
   },
   {
     name: "TP-Link Deco X55",
@@ -524,6 +584,10 @@ const products = [
     price: "₦780,000",
     rating: 5,
     reviews: 10,
+    Standard: "Wi-Fi 6 (802.11ax).",
+    Speed: "AX3000 — up to 3.0Gbps, with 2,402 Mbps on 5GHz and 574 Mbps on 2.4GHz.",
+    Ports: "3× Gigabit ports per Deco unit, which can automatically function as WAN or LAN.",
+    Range: "A 3-pack can cover up to 6,500 sq. ft. according to TP-Link.",
   },
 
   {
@@ -533,6 +597,11 @@ const products = [
     price: "₦900,000",
     rating: 5,
     reviews: 74,
+     Power: "Around 1,750W for common 5.2L/5.5-qt models.",
+    Capacity: "Approximately 5.2L (5.5 qt).",
+    Dimensions: "Approximately 36 × 25 × 32cm, depending on the specific model.",
+    Material: "Cooking basket and crisper plate with a non-stick coating.",
+
   },
   {
     name: "NutriBullet Pro Blender",
@@ -541,7 +610,12 @@ const products = [
     price: "₦135,000",
     rating: 5,
     reviews: 45,
-  },
+ Power: "900W motor.",
+    Capacity: "700ml / 24 oz cup.",
+    Dimensions: "Approximately 14 × 14 × 35cm, depending on the model.",
+    Material: "BPA-free blending cups with a stainless-steel extraction blade.",
+ 
+     },
   {
     name: "Philips Electric Kettle",
     category: "Kitchen Appliances",
@@ -549,7 +623,12 @@ const products = [
     price: "₦65,000",
     rating: 5,
     reviews: 31,
-  },
+      Power: "Approximately 2,200W.",
+    Capacity: "1.7L on many Philips models.",
+    Dimensions: "Varies by model; approximately 25 × 23 × 25cm for common 1.7L versions.",
+    Material: "Depending on the model, stainless steel or food-grade plastic.",
+ 
+    },
   {
     name: "Instant Pot Duo",
     category: "Kitchen Appliances",
@@ -557,7 +636,12 @@ const products = [
     price: "₦280,000",
     rating: 5,
     reviews: 10,
-  },
+      Power: "Approximately 1,000W for the 6-quart/5.7L model.",
+     Capacity: "5.7L / 6 qt.",
+      Dimensions: "Approximately 33 × 32 × 32cm. ",
+     Material: "Stainless-steel inner cooking pot.",
+
+   },
 
   {
     name: "HP LaserJet Pro Printer",
@@ -566,7 +650,11 @@ const products = [
     price: "₦680,000",
     rating: 5,
     reviews: 34,
-  },
+    Power: "Approximately 480W while printing on representative LaserJet Pro models.",
+    Capacity: "Paper tray capacity can reach around 250 sheets, depending on the model. ",
+    Connectivity: "Wi-Fi, Ethernet and USB are available on many LaserJet Pro models. ",
+    Dimensions: "Varies considerably between LaserJet Pro models.",
+    },
   {
     name: "Epson EcoTank L4260",
     category: "Office Appliances",
@@ -574,6 +662,10 @@ const products = [
     price: "₦500,000",
     rating: 5,
     reviews: 12,
+    Power: "Approximately 12W during printing.",
+     Capacity: "Rear paper feed holds approximately 100 sheets.",
+      Connectivity: "Wi-Fi, Wi-Fi Direct and USB. ",
+    Dimensions: "375 × 347 × 187mm.",
   },
   {
     name: "Canon PIXMA G3430",
@@ -582,6 +674,10 @@ const products = [
     price: "₦300,000",
     rating: 5,
     reviews: 64,
+    Power: "Approximately 16W while printing.",
+     Capacity: "Rear paper tray holds approximately 100 sheets.",
+      Connectivity: "Wi-Fi and USB.",
+    Dimensions: "Approximately 416 × 337 × 177mm.",
   },
   {
     name: "Fellowes Paper Shredder",
@@ -590,6 +686,10 @@ const products = [
     price: "₦670,000",
     rating: 5,
     reviews: 34,
+    Power: "Varies according to the model and motor size.",
+    Capacity: "Depends on the model; common office shredders can handle around 8–20+ sheets per pass, with wastebaskets ranging from small personal sizes to large office capacities.",
+     Connectivity: "None — shredders generally operate independently without Wi-Fi or Bluetooth.",
+    Dimensions: "Varies by model and shredder capacity.",
   },
 ];
 
