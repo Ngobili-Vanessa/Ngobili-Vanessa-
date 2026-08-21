@@ -1,4 +1,5 @@
-﻿import "./Profile.css";
+﻿import { Link, useNavigate } from "react-router-dom";
+import "./Profile.css";
 
 const user = {
   name: "Omeh samuel victory",
@@ -48,6 +49,8 @@ const wishlist = [
 ];
 
 function Profile() {
+  const navigate = useNavigate();
+
   return (
     <div className="profile-page">
       <div className="profile-hero">
@@ -70,15 +73,17 @@ function Profile() {
           </div>
 
           <div className="profile-actions">
-            <a href="#orders">View orders</a>
-            <button type="button">Edit profile</button>
+            <Link to="/settings#orders">View orders</Link>
+            <button type="button" onClick={() => navigate("/settings#account")}>
+              Edit profile
+            </button>
           </div>
         </div>
 
         <div className="profile-summary">
           <div className="section-header">
             <h2>Profile overview</h2>
-            <a href="#settings">Manage</a>
+            <Link to="/settings">Manage</Link>
           </div>
           <p>
             Your account is ready for faster checkout, trackable orders, and personalized recommendations. Keep your delivery details up to date for the best shopping experience.
@@ -105,7 +110,7 @@ function Profile() {
         <section className="profile-widget" id="orders">
           <div className="section-header">
             <h2>Recent orders</h2>
-            <a href="/cart">See all</a>
+            <Link to="/settings#orders">See all</Link>
           </div>
           <ul>
             {recentOrders.map((order) => (
@@ -121,7 +126,7 @@ function Profile() {
         <section className="profile-widget" id="saved-addresses">
           <div className="section-header">
             <h2>Saved addresses</h2>
-            <a href="#addresses">Edit</a>
+            <Link to="/settings#addresses">Edit</Link>
           </div>
           <ul>
             {savedAddresses.map((address) => (
@@ -136,7 +141,7 @@ function Profile() {
         <section className="profile-widget" id="wishlist">
           <div className="section-header">
             <h2>Wishlist</h2>
-            <a href="/search">Add more</a>
+            <Link to="/search">Add more</Link>
           </div>
           <ul>
             {wishlist.map((item) => (

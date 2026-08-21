@@ -89,13 +89,21 @@
 }
 
 .profile-actions a {
-    color: #0f172a;
-    background: #f8fafc;
+    color: rgb(0, 0, 138);
+    background: #f5f7ff;
+}
+
+.profile-actions a:hover {
+    background: #e8ebff;
 }
 
 .profile-actions button {
     color: #fff;
-    background: #0f172a;
+    background: rgb(0, 0, 138);
+}
+
+.profile-actions button:hover {
+    opacity: 0.85;
 }
 
 .profile-widgets {
@@ -116,7 +124,7 @@
 }
 
 .section-header a {
-    color: #2563eb;
+    color: rgb(0, 0, 138);
     font-weight: 700;
     font-size: 0.95rem;
 }
