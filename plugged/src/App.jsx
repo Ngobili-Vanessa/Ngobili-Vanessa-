@@ -9,13 +9,10 @@ import Category from "./component/Category";
 import Search from "./component/Search";
 import Cart from "./component/Cart";
 import Profile from "./component/Profile";
-<<<<<<< HEAD
 import Checkout from "./component/Checkout.jsx";
 import OrderSuccess from "./component/OrderSuccess.jsx";
 import ProductDetails from "./component/ProductDetails.jsx";
-=======
 import Settings from "./component/Settings";
->>>>>>> 85d9184 (feat(profile): fix link/button styling and add functional Settings page)
 
 import MainLayout from "./component/MainLayout";
 import AuthLayout from "./component/AuthLayout";
@@ -36,7 +33,7 @@ function App() {
           <Route path="/signin" element={<Signin />} />
         </Route>
 
-        
+
         <Route element={<MainLayout />}>
           <Route path="/home" element={<Home />} />
           <Route path="/category" element={<Category />} />
@@ -45,22 +42,19 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/profile" element={<Profile />} />
-<<<<<<< HEAD
           <Route path="/checkout" element={<Checkout />} />
           <Route
-  path="/product/:productName"
-  element={<ProductDetails />}
-/>
+            path="/product/:productName"
+            element={<ProductDetails />}
+          />
           <Route
-  path="/order-success"
-  element={<OrderSuccess />}
-/>
-=======
+            path="/order-success"
+            element={<OrderSuccess />}
+          />
           <Route path="/settings" element={<Settings />} />
->>>>>>> 85d9184 (feat(profile): fix link/button styling and add functional Settings page)
         </Route>
 
-        
+
 
       </Routes>
     </BrowserRouter>
