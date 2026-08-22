@@ -1,76 +1,237 @@
-.signin-container{
-       width: 450px;
-  padding: 30px;
-  margin: 50px auto;
-  background-color: rgb(182, 180, 180);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  border: 1px solid black;
-  height: 500px;
-}
-.welcome{
-    position: relative;
-bottom: 35px;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 40px;
-font-weight: bolder;
-color: black;
-}
-.continue{
- position: relative;
-bottom: 60px;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
-color: black;
-}
-input{
-        padding-left:15px ;
-}
-.email2{
-     position: relative;
-    bottom: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 330px;
-    left: 35px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: large;
-    border: 1px solid rgb(0, 0, 0);
-}
-.password2{
-       position: relative;
-    bottom: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 330px;
-    left: 35px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: large;
+.signin-container {
+    width: 450px;
+    max-width: calc(100% - 30px);
+
+    margin: 50px auto;
+    padding: 40px;
+
+    background-color: rgb(182, 180, 180);
+
     border: 1px solid black;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
 }
-.signin2{
-      position: relative;
-    bottom: 25px;
-    width: 355px;
-    left: 30px;
-    color: white;
-    background-color: rgb(0, 0, 138);
+
+.welcome {
+    width: 100%;
+
+    margin: 0 0 8px;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+
+    color: black;
+}
+
+.continue {
+    width: 100%;
+
+    margin: 0 0 25px;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    color: black;
+}
+
+.email2 {
+    width: 330px;
+    max-width: 100%;
+    height: 50px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    outline: none;
+}
+
+.email2:focus {
+    border-color: rgb(0, 0, 138);
+}
+
+.signin-password-wrapper {
+    position: relative;
+
+    width: 330px;
+    max-width: 100%;
+    height: 50px;
+
+    margin-top: 15px;
+}
+
+.password2 {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 45px 0 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    outline: none;
+}
+
+.password2:focus {
+    border-color: rgb(0, 0, 138);
+}
+
+.signin-password-eye {
+    position: absolute;
+
+    top: 50%;
+    right: 12px;
+
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    color: #777;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.signin-password-eye:hover {
+    color: rgb(0, 0, 138);
+}
+
+.signin2 {
+    width: 330px;
+    max-width: 100%;
+    height: 50px;
+
+    margin-top: 25px;
+
     border: none;
     border-radius: 30px;
-    height: 50px;
-    font-size: 18px;
+
+    background-color: rgb(0, 0, 138);
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
 }
-.back{
-    color: rgb(78, 75, 75) ;
-position: relative;
-bottom: 25px;
-left: 5px;
+
+.signin2:hover {
+    background-color: rgb(0, 0, 110);
 }
-.link2{
-     color: rgb(0, 0, 138) ;
-     cursor: pointer;
-     font-weight: bold;
-     text-decoration: underline;
+
+.back {
+    margin: 25px 0 0;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    color: rgb(78, 75, 75);
+}
+
+.link2 {
+    margin-left: 5px;
+
+    color: rgb(0, 0, 138);
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+
+    .signin-container {
+        width: calc(100% - 30px);
+
+        margin: 30px auto;
+
+        padding: 35px 20px;
+    }
+
+    .welcome {
+        font-size: 34px;
+    }
+
+    .continue {
+        font-size: 18px;
+    }
+
+    .email2,
+    .signin-password-wrapper,
+    .signin2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .signin-container {
+        width: calc(100% - 20px);
+
+        padding: 30px 15px;
+    }
+
+    .welcome {
+        font-size: 30px;
+    }
+
+    .continue {
+        font-size: 17px;
+    }
+
+    .email2,
+    .password2 {
+        font-size: 15px;
+    }
+
+    .signin2 {
+        font-size: 16px;
+    }
+
+    .back {
+        font-size: 14px;
+    }
 }

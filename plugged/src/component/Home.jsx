@@ -2,16 +2,18 @@ import { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-  const products = [
-    {
+ const products = [
+  {
     name: "Wireless Earbuds",
+    category: "Audio",
     image: "/images-featured/b74469f61562f7379f3e6c4dfcf159b2.jpg",
     className: "wireless-earbud-section",
     imgClass: "earbuds",
-    textClass:"wireless",
+    textClass: "wireless",
   },
   {
     name: "Bluetooth Speakers",
+    category: "Audio",
     image: "/images-featured/85c85731c377ebd68ef160a6960f653d.jpg",
     className: "bluetooth-speaker-section",
     imgClass: "speaker",
@@ -19,6 +21,7 @@ import { useNavigate } from "react-router-dom";
   },
   {
     name: "Laptops",
+    category: "Laptops",
     image: "/images-featured/IMG-20260615-WA0010.jpg",
     className: "laptop-section",
     imgClass: "laptop",
@@ -26,6 +29,7 @@ import { useNavigate } from "react-router-dom";
   },
   {
     name: "Smart Phones",
+    category: "Smartphones",
     image: "/images-featured/IMG-20260615-WA0032.jpg",
     className: "phone-section",
     imgClass: "phone",
@@ -33,6 +37,7 @@ import { useNavigate } from "react-router-dom";
   },
   {
     name: "Smart Watches",
+    category: "Smartwatch",
     image: "/images-featured/IMG-20260615-WA0034.jpg",
     className: "smartwatch-section",
     imgClass: "watch",
@@ -40,6 +45,7 @@ import { useNavigate } from "react-router-dom";
   },
   {
     name: "Refrigerators",
+    category: "Home Appliances",
     image: "/images-featured/IMG-20260616-WA0019.jpg",
     className: "fridge-section",
     imgClass: "frizzer",
@@ -47,6 +53,7 @@ import { useNavigate } from "react-router-dom";
   },
   {
     name: "Game Consoles",
+    category: "Gaming",
     image: "/images-featured/IMG-20260616-WA0024.jpg",
     className: "console-section",
     imgClass: "game",
@@ -54,6 +61,7 @@ import { useNavigate } from "react-router-dom";
   },
   {
     name: "Headphones",
+    category: "Audio",
     image: "/images-featured/IMG-20260616-WA0031.jpg",
     className: "headphone-section",
     imgClass: "head",
@@ -64,34 +72,42 @@ import { useNavigate } from "react-router-dom";
 const bestSellers = [
   {
     name: "Power Banks",
+    category: "Accessories",
     image: "/images-featured/IMG-20260617-WA0025.jpg",
   },
   {
     name: "Routers",
+    category: "Networking",
     image: "/images-featured/IMG-20260617-WA0027.jpg",
   },
   {
     name: "Tablets",
+    category: "Tablets",
     image: "/images-featured/IMG-20260617-WA0028.jpg",
   },
   {
     name: "Microwaves",
+    category: "Kitchen Appliances",
     image: "/images-featured/IMG-20260618-WA0005.jpg",
   },
   {
     name: "Air Fryers",
+    category: "Kitchen Appliances",
     image: "/images-featured/IMG-20260618-WA0010.jpg",
   },
   {
     name: "Blenders",
+    category: "Kitchen Appliances",
     image: "/images-featured/IMG-20260618-WA0000.jpg",
   },
   {
     name: "Electric Kettles",
+    category: "Kitchen Appliances",
     image: "/images-featured/IMG-20260618-WA0013.jpg",
   },
   {
     name: "Pressure Cookers",
+    category: "Kitchen Appliances",
     image: "/images-featured/IMG-20260618-WA0020.jpg",
   },
 ];
@@ -144,12 +160,25 @@ function Home() {
         <button className="arrow left" onClick={scrollLeft}> <FaChevronLeft/> </button>
         <div className="products"
           ref = {containerRef}>
-         {products.map((item, index) => (
-        <div className={item.className} key={index}>
-          <img className={item.imgClass} src={item.image} alt={item.name} />
-          <h2 className={item.textClass}>{item.name}</h2>
-          </div>
-         ))}
+        {products.map((item, index) => (
+  <div
+    className={item.className}
+    key={index}
+    onClick={() => navigate("/category", {
+      state: { selectedCategory: item.category }
+    })}
+  >
+    <img
+      className={item.imgClass}
+      src={item.image}
+      alt={item.name}
+    />
+
+    <h2 className={item.textClass}>
+      {item.name}
+    </h2>
+  </div>
+))}
         </div>
          <button className="arrow right" onClick={scrollRight}> <FaChevronRight/> </button>
       </div>
@@ -158,7 +187,12 @@ function Home() {
            <div className="promo-talks">
           <h1 className="flash">FLASH SALES</h1>
           <p className="save">Save up to 30% on selected electronics</p>
-          <button className="shopnow-promo">Shop Now</button>
+         <button
+  className="shopnow-promo"
+  onClick={() => navigate("/category")}
+>
+  Shop Now
+</button>
          </div>
          </div>
 
@@ -166,12 +200,29 @@ function Home() {
           <h2 id="pro">Best Sellers</h2>
            <button className="arrow left" onClick={scrollBestLeft}> <FaChevronLeft/> </button>
           <div className="products" ref={bestSellerRef}>
-              {bestSellers.map((item, index) => (
-                <div className="product-card" key={index}>
-                <img className="product-img" src={item.image} alt={item.name} />
-                <h3 className="product-title">{item.name}</h3>
-                </div>
-              ))}
+             {bestSellers.map((item, index) => (
+  <div
+    className="product-card"
+    key={index}
+    onClick={() =>
+      navigate("/category", {
+        state: {
+          selectedCategory: item.category,
+        },
+      })
+    }
+  >
+    <img
+      className="product-img"
+      src={item.image}
+      alt={item.name}
+    />
+
+    <h3 className="product-title">
+      {item.name}
+    </h3>
+  </div>
+))}
           </div>
            <button className="arrow right" onClick={scrollBestRight}> <FaChevronRight/> </button>
          </div>

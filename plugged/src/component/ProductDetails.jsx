@@ -1,12 +1,23 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FiShoppingCart, FiArrowLeft } from "react-icons/fi";
+import {
+  FiShoppingCart,
+  FiArrowLeft,
+  FiHeart,
+} from "react-icons/fi";
 import { useCart } from "../component/CartContext.jsx";
+import { useWishlist } from "../component/WishlistContext.jsx";
 import "./ProductDetails.css";
 
 function ProductDetails() {
   const location = useLocation();
+
   const { addToCart } = useCart();
+
+  const {
+    toggleWishlist,
+    isWishlisted,
+  } = useWishlist();
 
   const product = location.state?.product;
 
@@ -40,6 +51,10 @@ function ProductDetails() {
     }
   };
 
+  const handleWishlist = () => {
+    toggleWishlist(product);
+  };
+
   return (
     <div className="product-details-container">
 
@@ -51,12 +66,7 @@ function ProductDetails() {
         Back to Products
       </Link>
 
-
-     
-
       <div className="product-details">
-
-      
 
         <div className="product-details-image-container">
 
@@ -68,28 +78,48 @@ function ProductDetails() {
 
         </div>
 
-
-     
-
         <div className="product-details-info">
 
           <p className="product-category">
             {product.category || "Product"}
           </p>
 
-          <h1>
-            {product.name}
-          </h1>
+          <div className="product-title-row">
+
+            <h1>
+              {product.name}
+            </h1>
+
+            <button
+              type="button"
+              className={`details-wishlist-btn ${
+                isWishlisted(product.name)
+                  ? "wishlisted"
+                  : ""
+              }`}
+              onClick={handleWishlist}
+              aria-label={
+                isWishlisted(product.name)
+                  ? "Remove from wishlist"
+                  : "Add to wishlist"
+              }
+            >
+              <FiHeart
+                fill={
+                  isWishlisted(product.name)
+                    ? "currentColor"
+                    : "none"
+                }
+              />
+            </button>
+
+          </div>
 
           <p className="product-details-price">
             {product.price}
           </p>
 
-
           <div className="product-divider"></div>
-
-
-         
 
           <div className="product-availability">
 
@@ -100,9 +130,6 @@ function ProductDetails() {
             </span>
 
           </div>
-
-
-       
 
           <div className="product-quantity">
 
@@ -132,9 +159,6 @@ function ProductDetails() {
 
           </div>
 
-
-         
-
           <div className="product-actions">
 
             <button
@@ -160,50 +184,48 @@ function ProductDetails() {
 
       </div>
 
+      <div className="product-specifications">
 
-    
-<div className="product-specifications">
+        <h2>
+          Product Specifications
+        </h2>
 
-  <h2>
-    Product Specifications
-  </h2>
+        <div className="specifications-list">
 
-  <div className="specifications-list">
+          {Object.entries(product)
+            .filter(
+              ([key]) =>
+                ![
+                  "name",
+                  "category",
+                  "image",
+                  "price",
+                  "rating",
+                  "reviews",
+                ].includes(key)
+            )
+            .map(([key, value]) => (
+              <div
+                className="specification-row"
+                key={key}
+              >
+                <span>
+                  {key
+                    .replace(/([A-Z])/g, " $1")
+                    .replace(/^./, (letter) =>
+                      letter.toUpperCase()
+                    )}
+                </span>
 
-    {Object.entries(product)
-      .filter(
-        ([key]) =>
-          ![
-            "name",
-            "category",
-            "image",
-            "price",
-            "rating",
-            "reviews",
-          ].includes(key)
-      )
-      .map(([key, value]) => (
-        <div
-          className="specification-row"
-          key={key}
-        >
-          <span>
-            {key
-              .replace(/([A-Z])/g, " $1")
-              .replace(/^./, (letter) =>
-                letter.toUpperCase()
-              )}
-          </span>
+                <strong>
+                  {value}
+                </strong>
+              </div>
+            ))}
 
-          <strong>
-            {value}
-          </strong>
         </div>
-      ))}
 
-  </div>
-
-</div>
+      </div>
 
     </div>
   );

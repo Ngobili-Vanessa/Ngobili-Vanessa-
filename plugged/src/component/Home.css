@@ -1,38 +1,41 @@
-.home-container{
-    background-color:white;
+.home-container {
+  background-color: white;
 }
 
+.home-banner {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(0, 0, 138);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 1px;
+}
 
-.home-banner{
-    width: 100%;
-    height: 400px;
-    background-color: rgb(0, 0, 138) ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: 1px;
+.banner-text {
+  max-width: 500px;
 }
-.banner-text{
-    max-width: 500px;
+
+.headline {
+  font-size: 48px;
+  color: white;
+  line-height: 1.1;
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+  font-weight: 700;
 }
-.headline{
-    font-size: 48px;
-    color: white;
-    line-height: 1.1;
-    position: relative;
-    bottom: 20px;
-    left: 10px;
-    font-weight: 700px;
+
+.desc {
+  color: white;
+  position: relative;
+  bottom: 25px;
+  font-size: 18px;
+  left: 10px;
 }
-.desc{
-    color: white;
-    position: relative;
-    bottom: 25px;
-    font-size: 18px;
-    left: 10px;
-}
-.shopnow{
+
+.shopnow {
   border: none;
   padding: 14px 28px;
   border-radius: 25px;
@@ -43,11 +46,13 @@
   cursor: pointer;
   transition: 0.3s ease;
 }
-.shopnow:hover{
+
+.shopnow:hover {
   opacity: 0.85;
 }
-.explorenow{
-    border: none;
+
+.explorenow {
+  border: none;
   padding: 14px 28px;
   border-radius: 25px;
   background: white;
@@ -59,38 +64,44 @@
   position: relative;
   left: 30px;
 }
-.explorenow:hover{
+
+.explorenow:hover {
   opacity: 0.85;
 }
-.banner{
-    width: 500px;
-    height: 800px;
-    position: relative;
-    bottom: 35px;
-    right: 60px;
+
+.banner {
+  width: 500px;
+  height: 800px;
+  position: relative;
+  bottom: 35px;
+  right: 60px;
 }
-.feat-pro{
-padding: 20px;
-font-family: Arial, Helvetica, sans-serif;
-position: relative;
-   
+
+.feat-pro {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
-.pro{
-font-size: 35px;
-margin-bottom: 15px; 
-font-weight: bold; 
+
+.pro {
+  font-size: 35px;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
-.products{
- display: flex;
- gap: 20px;
- overflow-x:auto ;
- scroll-behavior: smooth;
- padding: 10px;
- flex-wrap: nowrap;
+
+.products {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  flex-wrap: nowrap;
 }
-.products::-webkit-scrollbar{
-    display: none;
+
+.products::-webkit-scrollbar {
+  display: none;
 }
+
 .wireless-earbud-section,
 .bluetooth-speaker-section,
 .laptop-section,
@@ -98,15 +109,16 @@ font-weight: bold;
 .smartwatch-section,
 .fridge-section,
 .console-section,
-.headphone-section{
-    min-width: 250px;
-    flex-shrink: 0;
-    background: #fff;
-    border-radius: 10px;
+.headphone-section {
+  min-width: 250px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 10px;
   overflow: hidden;
-    text-align: center;
-     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
+
 .wireless-earbud-section:hover,
 .bluetooth-speaker-section:hover,
 .laptop-section:hover,
@@ -114,9 +126,10 @@ font-weight: bold;
 .smartwatch-section:hover,
 .fridge-section:hover,
 .console-section:hover,
-.headphone-section:hover{
-    transform: scale(1.03);
+.headphone-section:hover {
+  transform: scale(1.03);
 }
+
 .earbuds,
 .speaker,
 .laptop,
@@ -124,11 +137,11 @@ font-weight: bold;
 .watch,
 .frizzer,
 .game,
-.head{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 12px;
+.head {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .wireless,
@@ -138,87 +151,487 @@ font-weight: bold;
 .smartt,
 .fridger,
 .console,
-.headphone{
-    font-size: 25px;
-    margin: 10px 0;
+.headphone {
+  font-size: 25px;
+  margin: 10px 0;
 }
 
 .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    background: white;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-.arrow.left{
-    left: 10px;
-}
-.arrow.right{
-    right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.promo{
-background-image: url(/images-featured/file_00000000bacc71fba3a1d0babcf992ba.png);
-background-size: cover;
-background-position: center;
-position: relative;
-height: 300px;
-overflow: hidden;
-border-radius: 12px;
+.arrow.left {
+  left: 10px;
 }
-.promo-talks{
-position: relative;
-top: 60px;
-right: 320px;
+
+.arrow.right {
+  right: 10px;
 }
-.flash{
-    color: white;
-    font-weight: bold;
-    font-size: 60px;
+
+.promo {
+  background-image: url(/images-featured/file_00000000bacc71fba3a1d0babcf992ba.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
 }
-.save{
-    color: white;
-    font-size: 20px;
+
+.promo-talks {
+  position: relative;
+  top: 60px;
+  right: 320px;
 }
-.shopnow-promo{
-    color: rgb(0, 0, 138);
-    width: 200px;
-    height: 60px;
-    position: relative;
-    top: 20px;
-    border: none;
-    border-radius: 20px;
+
+.flash {
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
 }
-.product-card{
+
+.save {
+  color: white;
+  font-size: 20px;
+}
+
+.shopnow-promo {
+  border: none;
+  padding: 14px 28px;
+  border-radius: 25px;
+  background: white;
+  color: rgb(0, 0, 138);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  top: 20px;
+}
+
+.shopnow-promo:hover {
+  opacity: 0.85;
+}
+
+.product-card {
+  min-width: 220px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.product-title {
+  font-size: 25px;
+  margin: 10px 0;
+  color: black;
+}
+
+.sellers {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 30px;
+}
+
+@media (max-width: 900px) {
+
+  .home-banner {
+    height: 350px;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+
+  .banner-text {
+    max-width: 50%;
+  }
+
+  .headline {
+    font-size: 38px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .banner {
+    width: 400px;
+    height: 650px;
+    right: 20px;
+  }
+
+  .feat-pro {
+    padding: 18px;
+  }
+
+  .pro {
+    font-size: 30px;
+  }
+
+  .wireless-earbud-section,
+  .bluetooth-speaker-section,
+  .laptop-section,
+  .phone-section,
+  .smartwatch-section,
+  .fridge-section,
+  .console-section,
+  .headphone-section {
     min-width: 220px;
-    background: #fff;
-    border-radius: 16px;
-    padding: 10px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+
+  .earbuds,
+  .speaker,
+  .laptop,
+  .phone,
+  .watch,
+  .frizzer,
+  .game,
+  .head {
+    height: 220px;
+  }
+
+  .promo {
+    height: 280px;
+  }
+
+  .promo-talks {
+    right: 150px;
+  }
+
+  .flash {
+    font-size: 48px;
+  }
+
+  .save {
+    font-size: 18px;
+  }
+
+  .sellers {
+    padding: 18px;
+  }
+
+  .product-card {
+    min-width: 200px;
+  }
+
+  .product-img {
+    height: 220px;
+  }
+
+  .product-title {
+    font-size: 22px;
+  }
 }
-.product-card:hover{
-    transform: scale(1.03);
+
+
+@media (max-width: 700px) {
+  .home-banner {
+    height: 500px;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 70px 20px 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .banner-text {
+    max-width: 100%;
+    z-index: 2;
+  }
+
+  .headline {
+    font-size: 36px;
+    line-height: 1.15;
+    left: 0;
+    bottom: 0;
+    margin-top: 0;
+  }
+
+  .desc {
+    left: 0;
+    bottom: 0;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .shopnow,
+  .explorenow {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  .explorenow {
+    left: 10px;
+  }
+
+  .banner {
+    position: absolute;
+    width: 320px;
+    height: 500px;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -180px;
+  }
+
+  .feat-pro {
+    padding: 15px;
+  }
+
+  .pro {
+    font-size: 26px;
+  }
+
+  .products {
+    gap: 15px;
+    padding: 8px;
+  }
+
+  .wireless-earbud-section,
+  .bluetooth-speaker-section,
+  .laptop-section,
+  .phone-section,
+  .smartwatch-section,
+  .fridge-section,
+  .console-section,
+  .headphone-section {
+    min-width: 190px;
+  }
+
+  .earbuds,
+  .speaker,
+  .laptop,
+  .phone,
+  .watch,
+  .frizzer,
+  .game,
+  .head {
+    height: 190px;
+  }
+
+  .wireless,
+  .bluetooth,
+  .lapp,
+  .telephone,
+  .smartt,
+  .fridger,
+  .console,
+  .headphone {
+    font-size: 20px;
+  }
+
+  .arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .arrow.left {
+    left: 5px;
+  }
+
+  .arrow.right {
+    right: 5px;
+  }
+
+  .promo {
+    height: 280px;
+    border-radius: 8px;
+  }
+
+  .promo-talks {
+    right: 0;
+    top: 55px;
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  .flash {
+    font-size: 40px;
+  }
+
+  .save {
+    font-size: 16px;
+  }
+
+  .sellers {
+    padding: 15px;
+    top: 20px;
+  }
+
+  .product-card {
+    min-width: 180px;
+  }
+
+  .product-img {
+    height: 190px;
+  }
+
+  .product-title {
+    font-size: 20px;
+  }
 }
-.product-img{
-    width: 100%;
+
+@media (max-width: 480px) {
+ .home-banner {
+  height: 380px;
+  padding: 30px 18px;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+  .banner-text {
+    max-width: 100%;
+    text-align: center;
+    z-index: 2;
+  }
+
+ .headline {
+  font-size: 30px;
+  line-height: 1.1;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.desc {
+  font-size: 14px;
+  left: 0;
+  bottom: 0;
+  line-height: 1.4;
+}
+
+  .shopnow,
+  .explorenow {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .explorenow {
+    left: 5px;
+  }
+
+ .banner {
+  width: 280px;
+  height: 440px;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: -145px;
+}
+
+  .feat-pro {
+    padding: 15px;
+  }
+
+  .pro {
+    font-size: 23px;
+  }
+
+  .products {
+    gap: 12px;
+    padding: 8px;
+  }
+
+  .wireless-earbud-section,
+  .bluetooth-speaker-section,
+  .laptop-section,
+  .phone-section,
+  .smartwatch-section,
+  .fridge-section,
+  .console-section,
+  .headphone-section {
+    min-width: 165px;
+  }
+
+  .earbuds,
+  .speaker,
+  .laptop,
+  .phone,
+  .watch,
+  .frizzer,
+  .game,
+  .head {
+    height: 165px;
+  }
+
+  .wireless,
+  .bluetooth,
+  .lapp,
+  .telephone,
+  .smartt,
+  .fridger,
+  .console,
+  .headphone {
+    font-size: 17px;
+  }
+
+  .arrow {
+    width: 32px;
+    height: 32px;
+  }
+
+  .promo {
     height: 250px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-.product-title{
-    font-size: 25px;
-    margin: 10px 0;
-    color: black;
-}
-.sellers{
-    padding: 20px;
-font-family: Arial, Helvetica, sans-serif;
-position: relative;
-top:30px;
+  }
+
+  .promo-talks {
+    top: 45px;
+    right: 0;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .flash {
+    font-size: 32px;
+  }
+
+  .save {
+    font-size: 14px;
+  }
+
+  .shopnow-promo {
+    padding: 11px 20px;
+    font-size: 14px;
+  }
+
+  .sellers {
+    padding: 15px;
+    top: 20px;
+  }
+
+  .sellers h2 {
+    font-size: 24px;
+  }
+
+  .product-card {
+    min-width: 160px;
+  }
+
+  .product-img {
+    height: 165px;
+  }
+
+  .product-title {
+    font-size: 17px;
+  }
 }

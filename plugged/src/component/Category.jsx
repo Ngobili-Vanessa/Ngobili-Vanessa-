@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./Category.css";
 import { useCart } from "../component/CartContext.jsx";
+import { useWishlist } from "../component/WishlistContext.jsx";
+import { FiHeart } from "react-icons/fi";
 const categories = [
   "All Products",
   "Smartphones",
@@ -19,7 +22,7 @@ const categories = [
   "Office Appliances",
 ];
 
-const products = [
+export const products = [
  {
   name: "iPhone 16 Pro",
   category: "Smartphones",
@@ -694,20 +697,26 @@ const products = [
 ];
 
 function Category() {
-  const [selectedCategory, setSelectedCategory] = useState("All Products");
-
   const {
     addToCart,
     cartMessage,
     closeCartMessage,
   } = useCart();
+const { wishlist } = useWishlist();
 
+const { toggleWishlist, isWishlisted } = useWishlist();
+  const location = useLocation();
+
+const [selectedCategory, setSelectedCategory] = useState(
+  location.state?.selectedCategory || "All Products"
+);
   const filteredProducts =
     selectedCategory === "All Products"
       ? products
       : products.filter(
           (product) => product.category === selectedCategory
         );
+   
 
   return (
     <div className="category-page">
@@ -751,6 +760,17 @@ function Category() {
       className="product-card"
       key={product.name}
     >
+      <button
+  type="button"
+  className={`wishlist-btn ${
+    isWishlisted(product.name) ? "wishlisted" : ""
+  }`}
+  onClick={() => toggleWishlist(product)}
+>
+  <FiHeart
+    fill={isWishlisted(product.name) ? "currentColor" : "none"}
+  />
+</button>
 
       <Link
         to={`/product/${encodeURIComponent(product.name)}`}

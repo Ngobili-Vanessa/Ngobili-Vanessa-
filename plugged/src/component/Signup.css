@@ -1,135 +1,294 @@
-.container{
+.container {
     width: 450px;
-  padding: 30px;
-  margin: 50px auto;
-  background-color: rgb(182, 180, 180);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  border: 1px solid black;
-  min-height: 400px;
+    max-width: calc(100% - 30px);
+    margin: 50px auto;
+    padding: 35px 40px 40px;
 
-}
-.create{
-position: relative;
-top: 25px;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
-font-weight: bolder;
-color: black;
-}
-input{
-    padding-left:15px ;
-}
-.email{
-    position: relative;
-    top: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 330px;
-    left: 35px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: large;
-    border: 1px solid rgb(0, 0, 0);
-}
-.password{
-     position: relative;
-    top: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 330px;
-    left: 35px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: large;
-    border: 1px solid black;
-}
-.confirm{
-     position: relative;
-    top: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 330px;
-    left: 35px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: large;
-    border: 1px solid black;
+    background-color: rgb(182, 180, 180);
 
-}
-.check{
-    position: relative;
-    right: 150px;
-    top: 29px;
-}
-.words{
-    position: relative;
-    bottom: 3px;
-    left: 12px;
-    font-size: 15px;
-    color: rgb(78, 75, 75);
-}
-.signup{
-    position: relative;
-    bottom: 25px;
-    width: 355px;
-    left: 30px;
-    color: white;
-    background-color: rgb(0, 0, 138);
-    border: none;
-    border-radius: 30px;
-    height: 50px;
-    font-size: 18px;
-}
-.lines{
+    border: 1px solid black;
+    border-radius: 15px;
+
     display: flex;
-    
-}
-.oneline{
-    width: 120px;
-    height: 1px;
-    color: black;
-    background-color: black;
-    position: relative;
-    right: 5px;
-    border: none;
-    /* top:  5px; */
-    bottom: 15px;
-}
-.secondline{
-     width: 120px;
-    height: 1px;
-    color: black;
-    background-color: black;
-    position: relative;
-    left: 10px;
-    border: none;
-    bottom: 15px;
+    flex-direction: column;
+    align-items: center;
 
-}
-.or{
-     position: relative;
-    left: 5px;
-    font-size: 15px;
-    bottom: 55px;
-     color: rgb(78, 75, 75);
- 
-}
-.account{
-color: rgb(78, 75, 75) ;
-position: relative;
-bottom: 100px;
-left: 5px;
-}
-.link{
-    color: rgb(0, 0, 138) ;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: underline;
+    box-sizing: border-box;
 }
 
-.logoo{
+.logoo {
     width: 100px;
     height: 100px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+.create {
+    width: 100%;
+
+    margin: 0 0 25px;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+
+    color: black;
+}
+
+.email {
+    width: 330px;
+    max-width: 100%;
+    height: 50px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    outline: none;
+}
+
+.email:focus {
+    border-color: rgb(0, 0, 138);
+}
+
+.password-wrapper {
     position: relative;
-    left: 145px;
+
+    width: 330px;
+    max-width: 100%;
+    height: 50px;
+
+    margin-top: 15px;
+}
+
+.password-wrapper .password,
+.password-wrapper .confirm {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 45px 0 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    outline: none;
+}
+
+.password-wrapper .password:focus,
+.password-wrapper .confirm:focus {
+    border-color: rgb(0, 0, 138);
+}
+
+.password-eye {
+    position: absolute;
+
+    top: 50%;
+    right: 12px;
+
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    color: #777;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.password-eye:hover {
+    color: rgb(0, 0, 138);
+}
+
+.words {
+    width: 330px;
+    max-width: 100%;
+
+    margin: 20px 0 20px;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: rgb(78, 75, 75);
+}
+
+.signup {
+    width: 330px;
+    max-width: 100%;
+    height: 50px;
+
+    margin: 0;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: rgb(0, 0, 138);
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.signup:hover {
+    background-color: rgb(0, 0, 110);
+}
+
+.lines {
+    width: 330px;
+    max-width: 100%;
+
+    margin: 25px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.oneline,
+.secondline {
+    flex: 1;
+
+    width: auto;
+    height: 1px;
+
+    margin: 0;
+
+    border: none;
+
+    background-color: #555;
+}
+
+.or {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    color: rgb(78, 75, 75);
+}
+
+.account {
+    margin: 0;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    color: rgb(78, 75, 75);
+}
+
+.link {
+    margin-left: 5px;
+
+    color: rgb(0, 0, 138);
+
+    font-weight: 700;
+
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+@media (max-width: 520px) {
+
+    .container {
+        width: calc(100% - 30px);
+
+        margin: 30px auto;
+
+        padding: 30px 20px 35px;
+    }
+
+    .logoo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .create {
+        font-size: 23px;
+    }
+
+    .email,
+    .password-wrapper,
+    .words,
+    .signup,
+    .lines {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .container {
+        width: calc(100% - 20px);
+
+        padding: 25px 15px 30px;
+    }
+
+    .logoo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .create {
+        font-size: 21px;
+    }
+
+    .email,
+    .password-wrapper .password,
+    .password-wrapper .confirm {
+        font-size: 15px;
+    }
+
+    .words {
+        font-size: 13px;
+    }
+
+    .signup {
+        font-size: 16px;
+    }
+
+    .account {
+        font-size: 14px;
+    }
 }
